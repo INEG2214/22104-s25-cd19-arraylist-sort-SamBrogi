@@ -3,7 +3,9 @@
  * @author Chase Rainwater
  * @version 1.0
  */
-public class CustomClassComparable  {
+
+//when using compareTo, add implements Comparable <class_name> to class signature
+public class CustomClassComparable implements Comparable<CustomClassComparable> {
     private int num;
     private String text;
 
@@ -49,8 +51,12 @@ public class CustomClassComparable  {
     @Override
     public int compareTo(CustomClassComparable o)
     {
-       //when "this" object  arugment object return 1 and note that this will result in ascending order
+       //when "this" object argument object return 1 and note that this will result in ascending order
        //switch return 1 return -1 to return in descending order
+
+        return this.text.compareTo(o.text);
+
+        //return this.num - o.num; //specifies that num is what matters when sorting CustomClassComparable object
 
     }
 

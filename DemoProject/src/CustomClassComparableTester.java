@@ -12,11 +12,16 @@ public class CustomClassComparableTester {
 
         ArrayList<CustomClassComparable> alCCC = new ArrayList<>();
 
+        //add objects to ArrayList
+        alCCC.add(ccc1);
+        alCCC.add(ccc2);
+        alCCC.add(ccc3);
+
         //Sort ArrayList of Custom Objects
         System.out.println("-----------------Sorting ArrayList of Custom Objects-------------------------------");
         System.out.println("ArrayList of Custom Objects before sort: " + alCCC.toString());
 
-
+        alCCC.sort(null);
 
         System.out.println("ArrayList of Custom Objects after sort: "+ alCCC.toString());
         System.out.println("-----------------------------------------------------------------------------" +"\n");
